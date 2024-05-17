@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/petcon.ico">
+    <title>A Simple Pet Finder</title>
+    <link rel="stylesheet" href="../Styles/home.css">
+    <link href="C:\Users\amous\OneDrive\Desktop\PerScholas SE  2024-RTT-21\HTML_CSS\Bootstrap\bootstrap-5.3.3-dist\css\bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <script type="text/javascript" src="C:\Users\amous\OneDrive\Desktop\PerScholas SE  2024-RTT-21\HTML_CSS\Bootstrap\bootstrap-5.3.3-dist\js\bootstrap.min.js"></script>
+</head>
+
+
+
+
+<body>
+    
+    <!-- This is the header where the Logo and Header of the page -->
+    <header>
+        <img src="../images/petLogo.gif" alt="Page Logo" height="75">
+        <h1>A Simple Pet Finder</h1>
+
+        <aside class="SideButtons">
+            <a href="2ndpage.html" accesskey="s" tabindex="0" title="Click to Sign Up">Sign Up</a>
+            
+            <a href="3rdpage.html" accesskey="l" tabindex="1" title="Click to Log In"> LogIn </a>
+        </aside>
+
+    </header>
+
+    <nav>
+        <ul>
+            <li id="home"><a href="Index/Home.html">Home</a></li>
+            <li><a href="....">Pets</a></li>
+            <li><a href="....">Gallary</a></li>
+            <li><a href="....">Process</a></li>
+            <li><a href="....">About Us</a></li>
+        </ul>
+
+    </nav>
+    
+    <!-- This is where the main content of the page reside -->
+    <main>
+        <div id="divleft">
+           
+           
+            <div id="h1search">
+                <h1 id="divform">Search &nbsp; <br>for<br> a Pet</h1>
+            </div>
+            
+            <div id="formsearch">
+                <form action="....html" method="get" id="search_form">
+                    <fieldset> 
+                        <!-- <legend>Pet's Specifics</legend> -->
+                        <label for="animaltype">Type of Pet:</label>
+                        <input type="text" name="animaltype" id="animaltype" placeholder="ex. Dog, Cat, Bird.....etc" autofocus required>
+                        
+                        <fieldset>
+                            <legend>Gender:</legend> 
+                            <input type="checkbox" name="gender" id="Male"  value="Male" >
+                            <label for="Male">Male</label>
+                            <input type="checkbox" name="gender" id="Female"  value="Female" >
+                            <label for="Female">Female</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Size:</legend> 
+                            <input type="radio" name="small" id="Small"  value="small" >
+                            <label for="Small">Small</label>
+                            <input type="radio" name="large" id="Large"  value="large" >
+                            <label for="Large">Large</label>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Age:</legend> 
+                            <select id="Age"  >
+                                <optgroup label="Number of years">
+                                    <option value="less1y">less than 1 year</option>
+                                    <option value="y">2</option>
+                                    <option value="y3">3</option>
+                                    <option value="y4">4</option>
+                                    <option value="over4y">Over 4 years</option>
+                                </optgroup>
+                            </select>    
+                        </fieldset>
+
+                        <fieldset id="buttons">
+                            <label>&nbsp;&nbsp;</label>
+                            <input type="submit" id="submit" value="Submit"> 
+                            <label>&nbsp;&nbsp; &nbsp;</label>
+                            <input type="reset" id="reset" value="Reset Fields"> 
+                        </fieldset>
+                    </fieldset>
+                </form>
+            </div>
+        </div>    
+
+
+
+
+
+        <div id="divright">
+
+            <div id="h1animation">
+                <h1 id="h1animated">Meet BORA!</h1>
+                <p id="rightleft"> <q>kdjfkjdfkjdkfjkdjkfjkdjfkjdkjfkdjfk kjkjkjkjkjkljlkjkljkjlj lkjkjkljkljkljkjklj
+                    kjkjlkjkljlkjlkjlkjlkj
+                    kjkljljljkljlkjkljkljkj
+                    jljkljkljkjkljkljkljlkjl
+                    kljkjkljlkjlkjkljkljlkjlkjlkj
+                    kjlkjlkjlkjlkjkljkljkljkljkljkljkljklj
+                    lkjkjlkjkljkljkljkljkljkj.</q>
+                </p>
+            </div>
+            
+            <div id="boraslideshow">
+                <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../images\BoraPics\Bora1.JPG" class="d-block w-100" alt="..." width="50" height="80">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images\BoraPics\Bora2.jpg" class="d-block w-100" alt="..." width="50" height="80">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images\BoraPics\Bora3.jpg" class="d-block w-100" alt="..." width="50" height="80">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images\BoraPics\Bora4.JPG" class="d-block w-100" alt="..." width="50" height="80">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../images\BoraPics\Bora5.JPG" class="d-block w-100" alt="..." width="50" height="80">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
+                
+
+
+
+                <!-- <ul>
+                    <li>
+                        <h2>Bora Relaxing</h2>
+                        <img src="../images\BoraPics\Bora1.JPG" alt="" width="80" height="80">
+                    </li>
+                    <li>
+                        <h2>Bora Rolling</h2>
+                        <img src="../images\BoraPics\Bora2.jpg" alt="" width="80" height="80">
+                    </li>
+                    <li>
+                        <h2>Bora Playing</h2>
+                        <img src="../images\BoraPics\Bora3.jpg" alt="" width="80" height="80">
+                    </li>
+                    <li>
+                        <h2>Bora &amp; Sara</h2>
+                        <img src="../images\BoraPics\Bora4.JPG" alt="" width="80" height="80">
+                    </li>
+                    <li>
+                        <h2>Bora &amp; Lily</h2>
+                        <img src="../images\BoraPics\Bora5.JPG" alt="" width="80" height="80">
+                    </li>
+                </ul> -->
+
+
+                
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Footer for copyRight and date  -->
+    <footer>
+        <p>&copy; <em>AHMED MOUSSA</em></p>
+    </footer>
+
+</body>
+
+
+
+
+
+</html>

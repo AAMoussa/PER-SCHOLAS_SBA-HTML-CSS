@@ -1,0 +1,257 @@
+body{
+    /* display: flex; */
+    background-color: rgb(208, 197, 197);
+    padding: 0%;
+    margin: 0%;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    border: 2px solid purple;
+    background-color:  rgb(137, 59, 137);
+    color: white;
+
+}
+
+/* header */#anim{ 
+    animation: moveright 1s ease-in-out 1s infinite alternate;
+    text-align: left;
+    font-style: italic;
+    width: 300px;
+    color: black;
+    
+}
+@keyframes moveright {
+    from{
+        color: black;
+        padding-left: 8%;
+    }
+    to{
+        color: yellow;
+        padding-left: 5%;
+    }
+    
+}
+
+
+ header img{
+    margin-left: 10px;
+    border: 5px double white;
+    border-radius: 0px 20px 30px 20px;
+    box-shadow: -4px -4px 5px 5px black;
+
+
+} 
+
+header h1{
+    flex-basis: 80%; /*This sends the signin links to the end of the box*/
+    padding-left: 20px;
+    font-style: oblique;
+    text-shadow: -4px -4px 5px black;
+    
+}
+
+aside{
+    display: flex;
+    margin: 5px;
+    /* margin-left: 20px; */
+    padding: 10px;
+    flex-wrap: wrap;
+    /* flex: basis 20%; ; */
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;    /*topLeft topRight lowerRight lowerLeft */
+    box-shadow: -4px -4px 1px 3px black;        /*Horiz-+  vertical(-/+) blurRadius spread color*/
+
+}
+ 
+.SideButtons a{ 
+    padding: 5px;
+    margin: 2px; 
+    border-style: inherit;
+    font-weight: bold;
+    text-decoration: none; 
+    text-align: center;
+    color: white;
+    background-color: rgb(31, 143, 187);
+    width: 100%;
+    
+    
+}
+
+/* NAVIGAION BAR */
+
+nav ul{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    list-style-type: none;
+    background-color: rgb(137, 59, 137) ;
+    padding: 0%;
+    margin: 2% 0%;
+    
+
+}
+
+nav li{
+    border: 2px solid black;
+    border-radius: 20px 20px 20px 20px; 
+    background-color:rgb(221, 189, 46)  ;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    margin: 5px;
+    text-align: center;
+    font-weight: bold;
+}
+
+nav a{
+
+    text-decoration: none;
+    color: rgb(137, 59, 137);
+}
+
+/* MAIN STYLING */
+main{
+    display: flex;
+    height: 300px;
+    padding: 5px 1px 1px 5px;
+    background-color:  rgb(137, 59, 137);
+}
+
+#divleft{
+    display: flex;
+    height: auto;
+    width: 50%;
+    color: white;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;    /*topLeft topRight lowerRight lowerLeft */
+    box-shadow: -4px -4px 1px 3px black;
+    margin: 5px 0 0 5px;
+}
+
+
+#h1search {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-style: italic;
+    
+    color: black;
+    margin-bottom: 10px;
+    
+}
+
+#h1animated{
+    animation: moveright 1s ease-in-out 1s infinite alternate;
+    text-align: left;
+    font-style: italic;
+    width: 300px;
+    color: black;
+    
+}
+@keyframes moveright {
+    from{
+        color: black;
+        padding-left: 8%;
+    }
+    to{
+        color: yellow;
+        padding-left: 5%;
+    }
+    
+}
+
+#formsearch{
+    color: black;
+    font-weight: bold;
+    border-radius: 20px 20px 20px 20px;    /*topLeft topRight lowerRight lowerLeft */
+    box-shadow: -4px -4px 1px 3px yellow;
+    margin: 5px 0 0 5px;
+    padding: 5px auto 0 5px;
+}
+
+#submit, #reset{
+    background-color: rgb(31, 143, 187);
+}
+
+#divright{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    height: 95%;
+    width: 50%;
+    border: 5px solid white;
+    border-radius: 20px 20px 20px 20px;    /*topLeft topRight lowerRight lowerLeft */
+    box-shadow: -4px -4px 1px 3px black;
+    margin: 5px 0 0 5px;
+}
+
+ /* #h1animation{
+    display: flex;
+    flex-wrap: wrap;
+
+
+}  */
+
+  #boraslideshow{
+    height: 50%;
+    width: 30%;
+    margin-left: 20%;
+    /* padding: auto 50%;
+    margin: auto 50% auto 0; */
+
+
+} 
+/*
+#boraslideshow ul{
+    list-style-type: none;
+    width: 100%;
+    position: relative;
+}
+#boraslideshow ul li{
+    float: left;
+    width: 20%;
+}
+ul{
+    animation: slideshow 15s infinite alternate; 
+}
+@keyframes slideshow {
+    0%{left: 0%;}
+    10%{left: 0%;}
+    20%{left: -100%;}
+    30%{left: -100%;}
+    40%{left: -200%;}
+    50%{left: -200%;}
+    60%{left: -300%;}
+    70%{left: -300%;}
+    80%{left: -400%;}
+    90%{left: -400%;}
+    100%{left: -400%;}
+} */
+
+
+
+
+
+/* FOOTER STYLING */
+footer{
+    color: yellow;
+    background-color:  rgb(137, 59, 137);
+    border: 1px solid purple;
+    text-align: right;
+    padding-right: 10px;
+    margin-top: 2%;
+    
+}
+
+    
